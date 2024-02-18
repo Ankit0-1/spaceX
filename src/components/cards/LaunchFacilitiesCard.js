@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import LaunchFacility from './LaunchFacility'
 import { pics } from '../../const/pics'
-import { MdExpandMore } from "react-icons/md";
 
 function LaunchFacilitiesCard({weather}) {
   const [isClosed, setIsClosed] = useState(true);
