@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import LaunchDetailCard from "./cards/LaunchDetailCard";
-import LaunchFacilitiesCard from "./cards/LaunchFacilitiesCard";
+import LaunchFacilities from "./LaunchFacilities";
 import LiveSatelliteCard from "./cards/LiveSatelliteCard";
 import {  useDispatch, useSelector } from "react-redux";
-import { featchWeather, fetchActiveSatellite, fetchLaunchPads, fetchRocketsDeatil, fetchUpcomingRockets, previousRocketLaunch } from "../redux/slice/RocketInfoSlice";
+import { featchWeather, fetchActiveSatellite, fetchLaunchPads, fetchRocketsDeatil, fetchUpcomingRockets, previousRocketLaunch } from "../redux/thunk";
 
 function Dashboard() {
   const dispatch = useDispatch();
@@ -32,7 +32,7 @@ function Dashboard() {
       {<LaunchDetailCard launchType="previous"docs={previousLaunch.docs}/>}
     </div>
     <div className="sc-gsTEea gtXlbR style-5EVDU" id="style-5EVDU">
-      {<LaunchFacilitiesCard weather={weather}/>}
+      {<LaunchFacilities weather={weather}/>}
       {<LiveSatelliteCard totalSatellite={ActiveRockets}/>}
     </div>
   </main>

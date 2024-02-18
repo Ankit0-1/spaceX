@@ -1,9 +1,8 @@
 import React from 'react'
-import App2 from './App2'
 import { addModalId, toggleModal } from '../../redux/slice/ModalSlice'
 import { UseDispatch, useDispatch, useSelector } from 'react-redux'
 
-function Rocket({rocketData, index}) {
+function RocketCard({rocketData, index}) {
   const dispatch = useDispatch();
   
   const handleRocketClick =() => {
@@ -61,4 +60,4 @@ function Rocket({rocketData, index}) {
   )
 }
 
-export default Rocket
+export default RocketCard

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function LaunchFacility({ image, data, name, label, region }) {
+function LaunchFacilityCard({ image, data, name, label, region }) {
   return (    <div display="flex" className="sc-gsTEea sc-bBXrwG dwGUTk bRiMKL">
   <div className="sc-bdfBQB cqVhKu">
     <div className="sc-bdfBQB sc-iJuVqt fNhnba">
@@ -59,4 +59,4 @@ function LaunchFacility({ image, data, name, label, region }) {
   )
 }
 
-export default LaunchFacility
+export default LaunchFacilityCard

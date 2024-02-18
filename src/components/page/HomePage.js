@@ -1,9 +1,7 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
 import NavBar from "../NavBar";
-import Rockets from "../Rockets";
 import ContentPge from "./ContentPge";
-import App2 from "../cards/App2";
+import ModalContainer from "../cards/ModalContainer";
 
 function HomePage() {
   return (
@@ -14,7 +12,7 @@ function HomePage() {
       <NavBar />
       <ContentPge />
     </div>
-    <App2 />
+    <ModalContainer />
   </div>
   </>
   );

@@ -1,10 +1,8 @@
 // import React from "react";
 import React, { useEffect, useState } from 'react';
-import { Button, Modal } from 'antd';
-import Rocket from "./cards/Rocket";
-import App2 from './cards/App2';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchRocketsDeatil } from '../redux/slice/RocketInfoSlice';
+import { fetchRocketsDeatil } from '../redux/thunk';
+import RocketCard from './cards/RocketCard';
 
 function Rockets() {
   const Rockets = useSelector((store) => store.rocketInfo.Rockets)
@@ -46,7 +44,7 @@ function Rockets() {
                 className="sc-gsTEea gIrGo snipcss0-4-4-5"
               >
                 {
-                  Rockets.map((rocket, index) => <Rocket rocketData={rocket} index={index} key={rocket.id}/>)
+                  Rockets.map((rocket, index) => <RocketCard rocketData={rocket} index={index} key={rocket.id}/>)
                 }
               </div>
             </div>

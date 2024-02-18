@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Scroller({ images }) {
+function Crouser({ images }) {
   const [imageIndex, setImageIndex] = useState(0);
   const nextImage = () => {
     if (imageIndex + 1 >= images.length) {
@@ -76,4 +76,4 @@ function Scroller({ images }) {
   );
 }
 
-export default Scroller;
+export default Crouser;
